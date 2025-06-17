@@ -38,6 +38,11 @@ const FaceDetection = ()=>{
 
       imageObject.onload = async() => {
 
+        // Clear previous detection message
+        setDetectionMessage(null);
+        setAge(null);
+        setGender(null);
+
         const detections = await faceApi.detectAllFaces
         ( imageObject, new faceApi.TinyFaceDetectorOptions() ).withAgeAndGender();
 
