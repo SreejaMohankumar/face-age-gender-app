@@ -1,5 +1,7 @@
 # 👤 Face Age & Gender Detection App
 
+🔗 **Live Demo:** [Click here to try it out!](https://6851cebd1cbae6cad5976c64--radiant-entremet-98d000.netlify.app/)
+
 This React app allows users to upload a photo, and it intelligently detects a **face**, estimates the **age**, and identifies the **gender** using `face-api.js` models.
 
 ---
