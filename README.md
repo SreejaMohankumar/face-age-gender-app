@@ -1,12 +1,65 @@
-# React + Vite
+# 👤 Face Age & Gender Detection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React app allows users to upload a photo, and it intelligently detects a **face**, estimates the **age**, and identifies the **gender** using `face-api.js` models.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Upload any face image (supports single face detection for now).
+- Detects and displays:
+  - ✅ Approximate **Age**
+  - ✅ **Gender** (Male / Female)
+- Displays success or error messages based on face detection.
+- Built with modern frontend tools:
+  - React (Vite setup)
+  - Bootstrap 5
+  - face-api.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 How It Works
+
+- Loads models for face detection, age, and gender from the `/public/models` folder.
+- When an image is uploaded:
+  - It is converted into an `Image` object.
+  - The `TinyFaceDetector` checks for any faces.
+  - If found, `AgeGenderNet` predicts age and gender.
+  - Results are displayed in the UI.
+
+---
+
+## 📂 Folder Structure
+
+face-age-gender-app/
+├── public/
+│ └── models/ # face-api.js model files
+├── src/
+│ ├── FaceDetection.jsx # Core component with logic
+│ ├── App.jsx # Main App file
+│ └── main.jsx # Entry point
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+
+## 🛠️ Getting Started
+
+### ✅ Prerequisites
+Make sure you have **Node.js** and **npm** installed.
+
+### 📦 Install & Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/SreejaMohankumar/face-age-gender-app.git
+
+# 2. Move into the project folder
+cd face-age-gender-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
