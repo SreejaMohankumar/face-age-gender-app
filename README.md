@@ -39,20 +39,6 @@ You must download and place face-api.js models in the following directory:
 
 ---
 
-## 📂 Folder Structure
-
-face-age-gender-app/
-├── public/
-│ └── models/ # face-api.js model files
-├── src/
-│ ├── FaceDetection.jsx # Core component with logic
-│ ├── App.jsx # Main App file
-│ └── main.jsx # Entry point
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
-
 ## 🛠️ Getting Started
 
 ### ✅ Prerequisites
