@@ -20,10 +20,10 @@ You must download and place face-api.js models in the following directory:
 /public/models/
 
 **You need these models:**
-tiny_face_detector
-face_landmark_68
-face_recognition
-age_gender
+- tiny_face_detector
+- face_landmark_68
+- face_recognition
+- age_gender
 
 📦 Download from the official repo:
 🔗 https://github.com/justadudewhohacks/face-api.js/tree/master/weights
