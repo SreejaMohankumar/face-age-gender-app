@@ -6,46 +6,60 @@ This React app allows users to upload a photo, and it intelligently detects a **
 
 ## 🚀 Features
 
-- Upload any face image (supports single face detection for now).
+- Upload any face image (supports single face detection for now)
 - Detects and displays:
   - ✅ Approximate **Age**
   - ✅ **Gender** (Male / Female)
-- Displays success or error messages based on face detection.
+- Displays success or error messages based on face detection
 - Built with modern frontend tools:
-  - React (Vite setup)
-  - Bootstrap 5
-  - face-api.js
+  - ⚛️ React (Vite setup)
+  - 🎨 Bootstrap 5
+  - 🧠 face-api.js
 
-You must download and place face-api.js models in the following directory:
-/public/models/
+---
 
-**You need these models:**
-- tiny_face_detector
-- face_landmark_68
-- face_recognition
-- age_gender
+## 📁 Required Models
 
-📦 Download from the official repo:
-🔗 https://github.com/justadudewhohacks/face-api.js/tree/master/weights
+You must download and place `face-api.js` models in the following directory:
+
+
+You need these models:
+
+- `tiny_face_detector`
+- `face_landmark_68`
+- `face_recognition`
+- `age_gender`
+
+📦 **Download models from the official repo:**  
+🔗 [face-api.js model weights](https://github.com/justadudewhohacks/face-api.js/tree/master/weights)
+
+---
 
 ## 🧠 How It Works
 
 - Loads models for face detection, age, and gender from the `/public/models` folder.
 - When an image is uploaded:
-  - It is converted into an `Image` object.
-  - The `TinyFaceDetector` checks for any faces.
-  - If found, `AgeGenderNet` predicts age and gender.
-  - Results are displayed in the UI.
+  1. It is converted into an `Image` object.
+  2. The `TinyFaceDetector` checks for any faces.
+  3. If found, `AgeGenderNet` predicts age and gender.
+  4. Results are displayed in the UI with styled alerts.
 
 ---
 
-👩‍💻 Author
-Sreeja Mohankumar
+## 👩‍💻 Author
+
+**Sreeja Mohankumar**
+
+---
 
 ## 🛠️ Getting Started
 
 ### ✅ Prerequisites
-Make sure you have **Node.js** and **npm** installed.
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm
 
 ### 📦 Install & Run
 
@@ -61,6 +75,3 @@ npm install
 
 # 4. Start the development server
 npm run dev
-
-
-
