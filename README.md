@@ -39,6 +39,9 @@ You must download and place face-api.js models in the following directory:
 
 ---
 
+👩‍💻 Author
+Sreeja Mohankumar
+
 ## 🛠️ Getting Started
 
 ### ✅ Prerequisites
@@ -59,6 +62,5 @@ npm install
 # 4. Start the development server
 npm run dev
 
-👩‍💻 Author
-Sreeja Mohankumar
+
 
