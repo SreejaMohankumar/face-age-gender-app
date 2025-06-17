@@ -16,7 +16,17 @@ This React app allows users to upload a photo, and it intelligently detects a **
   - Bootstrap 5
   - face-api.js
 
----
+You must download and place face-api.js models in the following directory:
+/public/models/
+
+**You need these models:**
+tiny_face_detector
+face_landmark_68
+face_recognition
+age_gender
+
+📦 Download from the official repo:
+🔗 https://github.com/justadudewhohacks/face-api.js/tree/master/weights
 
 ## 🧠 How It Works
 
@@ -62,4 +72,7 @@ npm install
 
 # 4. Start the development server
 npm run dev
+
+👩‍💻 Author
+Sreeja Mohankumar
 
